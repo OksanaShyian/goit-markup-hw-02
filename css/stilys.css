@@ -1,29 +1,25 @@
-/* акцент фону #2F303A */
-/* основний фон #F5F5F5 */
-/* вторинний колір фону #F5F4FA */
-
 body {
 	font-family: "Roboto", sans-serif;
 	background-color: #f5f5f5;
-	color: #212121;
+	color: var(--primary-text-color);
 }
 :root {
 	--primary-text-color: #212121;
 	--title-text-color: #757575;
-	--accent-color: #2196f3;
+	--accent-text-color: #2196f3;
 	--primary-white-color: #ffffff;
+	--second-color: #f5f4fa;
+	--accent-color: #2f303a;
 }
 .list {
 	list-style: none;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
-	color: var(--accent-color);
+
+.link:hover,
+.link:focus {
+	color: var(--accent-text-color);
 }
-.contacts-nav .link:hover,
-.contacts-nav .link:focus {
-	color: var(--accent-color);
-}
+
 .link {
 	text-decoration: none;
 }
@@ -33,7 +29,7 @@ body {
 	background-color: var(--primary-white-color);
 }
 .logo {
-	ont-family: "Raleway";
+	font-family: "Raleway";
 	font-style: normal;
 	font-weight: 700;
 	font-size: 26px;
@@ -41,7 +37,7 @@ body {
 	letter-spacing: 0.03em;
 }
 .logo {
-	color: var(--accent-color);
+	color: var(--accent-text-color);
 }
 .heder-logo {
 	color: #000000;
@@ -59,9 +55,12 @@ body {
 .contacts-nav a {
 	color: var(--title-text-color);
 }
-/* ---------------------HERO----------------- */
+.link.current {
+	color: var(--accent-text-color);
+}
+/*--------------------HERO----------------- */
 .hero {
-	background-color: #2f303a;
+	background-color: var(--accent-color);
 }
 .hero-title {
 	font-weight: 900;
@@ -74,5 +73,95 @@ body {
 }
 .button {
 	color: var(--primary-text-color);
+	background-color: var(--primary-white-color);
+}
+.button {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: var(--primary-white-color);
+	background-color: var(--accent-text-color);
+}
+.button:hover,
+.button:focus {
+	color: var(--accent-text-color);
+	background-color: var(--second-color);
+}
+/* ---------------------SECTION----------------- */
+
+.section-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--primary-text-color);
+}
+.section-text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--title-text-color);
+}
+/* ---------------------FIATURE----------------- */
+
+.fiature-title,
+.team-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--primary-text-color);
+}
+/* ---------------------TEAM----------------- */
+
+.team {
+	background-color: var(--second-color);
+}
+.team-about {
+	background-color: var(--primary-white-color);
+}
+.team-name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--primary-text-color);
+}
+.team-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--title-text-color);
+}
+/* ---------------------FOOTER----------------- */
+.footer {
 	background-color: var(--accent-color);
+}
+.footer-logo {
+	color: var(--primary-white-color);
+}
+.adress .contact {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+}
+.footer-adress {
+	font-style: normal;
+}
+.adress {
+	color: var(--primary-white-color);
+}
+.contact {
+	color: rgba(255, 255, 255, 0.6);
 }
