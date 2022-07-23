@@ -11,7 +11,7 @@ body {
 	--primary-text-color: #212121;
 	--title-text-color: #757575;
 	--accent-color: #2196f3;
-	--primary-white-color:#ffffff;
+	--primary-white-color: #ffffff;
 }
 .list {
 	list-style: none;
@@ -73,6 +73,6 @@ body {
 	color: var(--primary-white-color);
 }
 .button {
-	color: var(--primary-text-color;
+	color: var(--primary-text-color);
 	background-color: var(--accent-color);
 }
