@@ -1,22 +1,37 @@
-/* колір основного тексту #212121 */
-/* білий #FFFFFF */
-/* вторинний колір #757575 */
-/* акцент color: #2196F3 */
 /* акцент фону #2F303A */
 /* основний фон #F5F5F5 */
 /* вторинний колір фону #F5F4FA */
 
 body {
-	font-family: "Roboto Bold", sans-serif;
+	font-family: "Roboto", sans-serif;
 	background-color: #f5f5f5;
 	color: #212121;
+}
+:root {
+	--primary-text-color: #212121;
+	--title-text-color: #757575;
+	--accent-color: #2196f3;
+	--primary-white-color:#ffffff;
 }
 .list {
 	list-style: none;
 }
-/* ---------------------HEADER----------------- */
+.site-nav .link:hover,
+.site-nav .link:focus {
+	color: var(--accent-color);
+}
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
+	color: var(--accent-color);
+}
+.link {
+	text-decoration: none;
+}
 
-.logo-color,
+/* ---------------------HEADER----------------- */
+.page-header {
+	background-color: var(--primary-white-color);
+}
 .logo {
 	ont-family: "Raleway";
 	font-style: normal;
@@ -25,23 +40,47 @@ body {
 	line-height: 1.19;
 	letter-spacing: 0.03em;
 }
-.logo-color {
-	color: #2196f3;
-}
 .logo {
+	color: var(--accent-color);
+}
+.heder-logo {
 	color: #000000;
 }
 .site-nav,
 .contacts-nav {
-	font-family: "Roboto";
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 }
 .site-nav a {
-	color: #212121;
+	color: var(--primary-text-color);
 }
 .contacts-nav a {
-	color: #757575;
+	color: var(--title-text-color);
+}
+/* ---------------------HERO----------------- */
+.hero {
+	background-color: #2f303a;
+}
+.hero-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--primary-white-color);
+}
+.button {
+	color: var(--primary-text-color;
+	background-color: var(--accent-color);
+}
+.section {
+}
+.list {
+}
+.section-title {
+}
+.section-text {
 }
