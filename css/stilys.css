@@ -30,7 +30,6 @@ body {
 }
 .logo {
 	font-family: "Raleway";
-	font-style: normal;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
@@ -71,10 +70,7 @@ body {
 	text-transform: uppercase;
 	color: var(--primary-white-color);
 }
-.button {
-	color: var(--primary-text-color);
-	background-color: var(--primary-white-color);
-}
+
 .button {
 	font-weight: 700;
 	font-size: 16px;
@@ -164,4 +160,34 @@ body {
 }
 .contact {
 	color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---------------------PORTFOLIO----------------- */
+
+.button-filter {
+	color: var(--primary-text-color);
+	background-color: var(--second-color);
+}
+.button-filter:hover,
+.button-filter:focus {
+	color: var(--primary-white-color);
+	background-color: var(--accent-text-color);
+}
+.portfolio {
+	background: var(--second-color);
+}
+.portfolio-about {
+	background-color: var(--primary-white-color);
+}
+.portfolio-name {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+.portfolio-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.03em;
 }
