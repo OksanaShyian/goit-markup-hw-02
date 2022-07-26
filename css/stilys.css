@@ -58,7 +58,7 @@ body {
 .link.current {
 	color: var(--accent-text-color);
 }
-/*--------------------HERO----------------- */
+/*--------------------HERO-------------------- */
 .hero {
 	background-color: var(--accent-color);
 }
@@ -71,7 +71,6 @@ body {
 	text-transform: uppercase;
 	color: var(--primary-white-color);
 }
-
 .button {
 	font-weight: 700;
 	font-size: 16px;
