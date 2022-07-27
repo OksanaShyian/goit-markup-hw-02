@@ -84,8 +84,7 @@ body {
 }
 .button:hover,
 .button:focus {
-	color: var(--accent-text-color);
-	background-color: var(--second-color);
+	opacity: 0.9;
 }
 /* ---------------------SECTION----------------- */
 
@@ -165,6 +164,7 @@ body {
 /* ---------------------PORTFOLIO----------------- */
 
 .button-filter {
+	cursor: pointer;
 	font-family: inherit;
 	font-weight: 500;
 	font-size: 16px;
@@ -177,9 +177,6 @@ body {
 .button-filter:focus {
 	color: var(--primary-white-color);
 	background-color: var(--accent-text-color);
-}
-.portfolio {
-	background: var(--second-color);
 }
 .portfolio-about {
 	background-color: var(--primary-white-color);
@@ -195,5 +192,5 @@ body {
 	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: 0.03em;
-	color: rgba(255, 255, 255, 0.6);
+	color: var(--title-text-color);
 }
